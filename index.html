@@ -1,0 +1,343 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>n0xpixel | Developer Portfolio</title>
+  <link rel="icon" href="logo.png">
+  <meta name="description" content="n0xpixel portfolio: premium app and web development, UI/UX, brand visuals, and digital engineering services.">
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <a class="skip-link" href="#hero">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#hero" aria-label="n0xpixel home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">n0xpixel</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#analytics">Analytics</a></li>
+        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+        <span class="theme-toggle__icon" id="theme-toggle-icon" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section hero" id="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-noise" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy reveal reveal-left">
+          <p class="hero-kicker">Elite Developer Brand</p>
+          <h1>n0xpixel</h1>
+          <p class="hero-description">
+            I build high-performance apps and premium web experiences that are engineered for scale, speed, and trust.
+          </p>
+
+          <p class="typing-line" aria-live="polite">
+            <span class="typing-prefix">Role:</span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-caret" aria-hidden="true">|</span>
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#portfolio">View Portfolio</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero-trust">
+            <article class="trust-card">
+              <h3>Client-Ready Delivery</h3>
+              <p>Production-grade quality, clear architecture, and dependable communication.</p>
+            </article>
+            <article class="trust-card">
+              <h3>Engineering First</h3>
+              <p>Systems designed for maintainability, performance, and long-term growth.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-right">
+          <span class="hero-orb" aria-hidden="true"></span>
+          <div class="profile-shell">
+            <img src="profile.jpg" alt="Portrait of n0xpixel" class="hero-profile" width="420" height="420" decoding="async" fetchpriority="high" data-profile-image>
+          </div>
+          <div class="availability glass-card">
+            <p class="availability-label">Current Status</p>
+            <p class="availability-value">Available for premium projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">About</p>
+          <h2>Deep technical execution with creative delivery.</h2>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-card glass-card reveal reveal-left">
+            <img src="profile.jpg" alt="n0xpixel profile portrait" class="about-photo" width="220" height="220" loading="lazy" decoding="async" data-profile-image>
+            <div class="about-copy">
+              <p>
+                I am a developer focused on deep app development and website engineering, combining clean architecture with
+                performance-minded implementation. Beyond code, I deliver design-driven creative outputs including logos,
+                posters, and video edits that keep your brand identity consistent across platforms.
+              </p>
+              <p>
+                My approach is technical, structured, and outcomes-oriented: understand the objective, build reliable systems,
+                and ship polished products that clients can confidently showcase.
+              </p>
+            </div>
+          </article>
+
+          <div class="about-highlights">
+            <article class="highlight-card glass-card reveal">
+              <h3>Deep App Development</h3>
+              <p>Scalable application logic, efficient state handling, and robust architecture for long-term growth.</p>
+            </article>
+            <article class="highlight-card glass-card reveal">
+              <h3>Website Engineering</h3>
+              <p>Fast, responsive, SEO-ready websites with clean code, accessibility, and production reliability.</p>
+            </article>
+            <article class="highlight-card glass-card reveal">
+              <h3>Creative Technical Blend</h3>
+              <p>Logo design, poster design, and video editing aligned with a strong engineering mindset.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">Skills</p>
+          <h2>Core expertise measured by practical outcomes.</h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal">
+            <div class="skill-head">
+              <h3>App Development</h3>
+              <span class="skill-value" data-target="95">0%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="95"></span></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <div class="skill-head">
+              <h3>UI/UX Design</h3>
+              <span class="skill-value" data-target="89">0%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="89"></span></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <div class="skill-head">
+              <h3>Web Development</h3>
+              <span class="skill-value" data-target="97">0%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="97"></span></div>
+          </article>
+          <article class="skill-card glass-card reveal">
+            <div class="skill-head">
+              <h3>Machine Learning</h3>
+              <span class="skill-value" data-target="82">0%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="82"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section analytics" id="analytics">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">Live Analytics</p>
+          <h2>Execution volume with measurable consistency.</h2>
+        </header>
+
+        <div class="analytics-grid">
+          <article class="counter-card glass-card reveal">
+            <p class="counter" data-target="130" data-suffix="+">0</p>
+            <p class="counter-label">Projects Completed</p>
+          </article>
+          <article class="counter-card glass-card reveal">
+            <p class="counter" data-target="6400" data-suffix="+">0</p>
+            <p class="counter-label">Hours in HTML</p>
+          </article>
+          <article class="counter-card glass-card reveal">
+            <p class="counter" data-target="5900" data-suffix="+">0</p>
+            <p class="counter-label">Hours in CSS</p>
+          </article>
+          <article class="counter-card glass-card reveal">
+            <p class="counter" data-target="7100" data-suffix="+">0</p>
+            <p class="counter-label">Hours in JS</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">Portfolio</p>
+          <h2>Selected projects crafted for impact.</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card tilt-card reveal">
+            <h3>FinFlux Dashboard</h3>
+            <p>A real-time finance analytics dashboard with intelligent filtering, role-based access, and performance-first charts.</p>
+            <p class="project-tech">Tech: React, Node.js, PostgreSQL, WebSockets</p>
+            <a href="#" aria-label="Open FinFlux Dashboard demo">View Demo</a>
+          </article>
+          <article class="project-card glass-card tilt-card reveal">
+            <h3>PulseCart Commerce</h3>
+            <p>Conversion-optimized e-commerce storefront with streamlined checkout, dynamic product bundles, and secure payments.</p>
+            <p class="project-tech">Tech: Next.js, TypeScript, Stripe, Redis</p>
+            <a href="#" aria-label="Open PulseCart Commerce demo">View Demo</a>
+          </article>
+          <article class="project-card glass-card tilt-card reveal">
+            <h3>NeuroNote App</h3>
+            <p>Cross-platform productivity app with offline sync, collaborative notes, and AI-assisted writing workflows.</p>
+            <p class="project-tech">Tech: Flutter, Firebase, Python, FastAPI</p>
+            <a href="#" aria-label="Open NeuroNote App demo">View Demo</a>
+          </article>
+          <article class="project-card glass-card tilt-card reveal">
+            <h3>Vertex Studio Site</h3>
+            <p>Premium agency website featuring advanced animation timing, SEO architecture, and modular content strategy.</p>
+            <p class="project-tech">Tech: HTML, CSS, JavaScript, GSAP-style custom motion</p>
+            <a href="#" aria-label="Open Vertex Studio Site demo">View Demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-kicker">Services</p>
+          <h2>End-to-end digital production services.</h2>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card glass-card reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 5h16v10H4zM8 19h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Web Development</h3>
+            <p>Fast, secure, and scalable web platforms with premium UI quality and maintainable architecture.</p>
+          </article>
+          <article class="service-card glass-card reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" focusable="false"><rect x="7" y="2.5" width="10" height="19" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M10 18.5h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>App Development</h3>
+            <p>Native-quality cross-platform applications with reliable backends and optimized user flows.</p>
+          </article>
+          <article class="service-card glass-card reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 4h16v16H4zM4 10h16M10 4v16" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>UI/UX Design</h3>
+            <p>User-centered interfaces that balance aesthetics, usability, and measurable conversion outcomes.</p>
+          </article>
+          <article class="service-card glass-card reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 3l2.7 5.5L21 9.4l-4.5 4.4 1.1 6.2L12 17l-5.6 3 1.1-6.2L3 9.4l6.3-.9L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Logo & Poster Design</h3>
+            <p>Distinct visual identity systems and campaign-ready assets that feel polished and brand-consistent.</p>
+          </article>
+          <article class="service-card glass-card reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 6h16v12H4zM10 9l5 3-5 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Video Editing</h3>
+            <p>High-clarity motion edits for product showcases, social media campaigns, and brand storytelling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <header class="section-header reveal">
+          <p class="section-kicker">Contact</p>
+          <h2>Direct channels for fast collaboration.</h2>
+        </header>
+
+        <div class="contact-direct reveal">
+          <a class="social-card glass-card reddit" href="https://www.reddit.com/user/n0xpixel/" target="_blank" rel="noopener noreferrer" aria-label="Open Reddit profile">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M22 12.1c0-1.1-.9-2-2-2-.5 0-1 .2-1.4.6-1.4-1-3.3-1.7-5.4-1.8l1-3.2 2.7.6a1.8 1.8 0 1 0 .3-1.2l-3-.7c-.3-.1-.7.1-.8.5l-1.2 3.8c-2.2.1-4.2.8-5.6 1.8-.4-.4-.9-.6-1.4-.6-1.1 0-2 .9-2 2 0 .8.5 1.5 1.1 1.8 0 .2-.1.4-.1.7 0 2.9 3.4 5.2 7.6 5.2s7.6-2.3 7.6-5.2c0-.2 0-.5-.1-.7.7-.3 1.1-1 1.1-1.8Zm-12.4 1.7a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2Zm2.4 3.3c-1.3 0-2.5-.5-3.1-1.2a.6.6 0 0 1 .9-.8c.4.4 1.2.8 2.2.8s1.8-.3 2.2-.8a.6.6 0 1 1 .9.8c-.6.7-1.8 1.2-3.1 1.2Zm2.4-3.3a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2Z"/></svg>
+            </span>
+            <span class="social-text">
+              <span class="social-label">Reddit</span>
+              <span class="social-meta">u/n0xpixel</span>
+            </span>
+            <span class="social-cta">Open</span>
+          </a>
+
+          <a class="social-card glass-card discord" href="https://discord.com/users/953607372000075777" target="_blank" rel="noopener noreferrer" aria-label="Open Discord profile">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M20.3 4.6A16.4 16.4 0 0 0 16.2 3a12 12 0 0 0-.5 1.1 15 15 0 0 0-7.4 0A12 12 0 0 0 7.8 3 16.4 16.4 0 0 0 3.7 4.6C1.1 8.5.4 12.3.8 16a16.6 16.6 0 0 0 5 2.5c.4-.6.8-1.2 1-1.9a10.7 10.7 0 0 1-1.6-.8l.4-.3c3 1.4 6.2 1.4 9.1 0l.4.3c-.5.3-1 .6-1.6.8.3.7.6 1.3 1 1.9a16.6 16.6 0 0 0 5-2.5c.5-4.3-.8-8-2.2-11.4ZM9.6 13.8c-.9 0-1.6-.8-1.6-1.8s.7-1.8 1.6-1.8c.9 0 1.6.8 1.6 1.8s-.7 1.8-1.6 1.8Zm4.8 0c-.9 0-1.6-.8-1.6-1.8s.7-1.8 1.6-1.8c.9 0 1.6.8 1.6 1.8s-.7 1.8-1.6 1.8Z"/></svg>
+            </span>
+            <span class="social-text">
+              <span class="social-label">Discord</span>
+              <span class="social-meta">953607372000075777</span>
+            </span>
+            <span class="social-cta">Open</span>
+          </a>
+
+          <a class="social-card glass-card telegram" href="https://t.me/n0xpixel" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram profile">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M21.5 4.1a1 1 0 0 0-1-.1L2.7 11c-.4.2-.4.8 0 1l4.5 1.7 1.8 5.6c.1.4.7.5 1 .2l2.5-2.6 4.4 3.2c.5.4 1.3.1 1.5-.6l3-14.6a1 1 0 0 0-.4-.8Zm-13 9.2-.6 3.2-1-3.1 8.9-5.9-7.3 5.8Z"/></svg>
+            </span>
+            <span class="social-text">
+              <span class="social-label">Telegram</span>
+              <span class="social-meta">@n0xpixel</span>
+            </span>
+            <span class="social-cta">Open</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> n0xpixel. Built for premium digital experiences.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
